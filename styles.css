@@ -1,0 +1,159 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 0;
+    text-align: center;
+    background: url(img/fonddo.jpg) no-repeat center center/ cover;
+    background-attachment: fixed;
+  }
+  
+  /* Contenedor principal */
+  
+  .contenedor {
+    width: 700px;
+    min-height: 500px;
+    padding: 40px;   
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.397);
+  }
+  
+  /* Titulo */
+  
+ .uniquifier {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-size: 42px ;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50; 
+    
+      @media screen and (max-width: 420px){
+        font-size: 30px;
+      }
+  }
+  
+  /* Ingresar texto */
+  
+  input {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid rgb(106, 203, 241);
+    background-color: rgba(245, 245, 220, 0);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+
+    @media screen and (max-width: 420px){
+      width: 88%;
+      height: 45px;
+    }
+  }
+  
+  /* Boton */
+  
+  button {
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(106, 203, 241);
+    font-size: 22px;
+    border-radius: 20px;
+    border: 0px solid rgb(0, 0, 0);
+    cursor: pointer;
+    user-select: none;
+
+    @media screen and (max-width: 420px){
+      font-size: 20px;
+      width: 138px;
+      height: 52px;
+    }
+  }
+  
+  /* Lista de tareas */
+  
+  #lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+
+    @media screen and (max-width: 420px){
+      width: 92%;
+    }
+  }
+  
+  /* Tareas individuales */
+  
+  .tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(247, 245, 112, 0.911);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+
+    @media screen and (max-width: 420px){
+      font-size: 19px;
+    }
+  }
+  
+  /* Estilo para tarea completada */
+  
+  .tarea.completada {
+    text-decoration: line-through;
+    background-color: rgba(250, 113, 147, 0.911);
+  }
+  
+  .tarea p {
+    max-width: 350px;
+  }
+  
+  /* Iconos */
+  
+  i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    @media screen and (max-width: 420px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  .icono-completar {
+    color: rgb(0, 0, 0);
+  }
+  
+  .icono-eliminar {
+    color: rgb(0, 0, 0);
+  }
+  
